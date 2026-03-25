@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Logo Aplikasi -->
+        <ImageView
+            android:src="@drawable/ic_cuci_basah"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Nama Aplikasi -->
+        <TextView
+            android:text="Cuci Yuk"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Nama -->
+        <EditText
+            android:id="@+id/etName"
+            android:hint="Nama Lengkap"
+            android:padding="14dp"
+            android:background="@drawable/bg_input"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="Email"
+            android:padding="14dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_input"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Nomor HP -->
+        <EditText
+            android:id="@+id/etPhone"
+            android:hint="Nomor HP"
+            android:inputType="phone"
+            android:padding="14dp"
+            android:background="@drawable/bg_input"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Password Wrapper -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:hint="Password"
+                android:padding="14dp"
+                android:inputType="textPassword"
+                android:background="@drawable/bg_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/btnShowPass"
+                android:src="@drawable/ic_visibility_off"
+                android:layout_alignParentEnd="true"
+                android:padding="14dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+        </RelativeLayout>
+
+        <!-- Tombol Register -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:text="Daftar Sekarang"
+            android:background="@drawable/bg_button_primary"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <!-- Sudah punya akun? Login -->
+        <TextView
+            android:id="@+id/tvGoLogin"
+            android:text="Sudah punya akun? Login"
+            android:textColor="@color/teal_700"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</ScrollView>

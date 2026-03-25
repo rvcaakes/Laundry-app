@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:src="@drawable/ic_cuci_basah"
+            android:layout_marginTop="40dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="Logo" />
+
+        <!-- Title -->
+        <TextView
+            android:text="Cuci Yuk"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Masuk ke akun kamu"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Username / Email / Phone input -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="@drawable/bg_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etIdentifier"
+                android:hint="Email atau Nomor HP"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Password input with eye icon -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="12dp"
+            android:background="@drawable/bg_input"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:hint="Password"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/btnShowPass"
+                android:src="@drawable/ic_visibility_off"
+                android:padding="6dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+        </LinearLayout>
+
+        <!-- Login button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:background="@drawable/bg_button_primary"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <!-- Register Text -->
+        <TextView
+            android:id="@+id/tvGoRegister"
+            android:text="Belum punya akun? Register"
+            android:textColor="@color/teal_700"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
